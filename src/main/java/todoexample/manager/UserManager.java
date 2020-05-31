@@ -50,13 +50,7 @@ public class UserManager {
         return users;
     }
 
-    public void deleteUserById(int id) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM user WHERE id=?");
-        preparedStatement.setInt(1, id);
-        preparedStatement.executeUpdate();
 
-
-    }
 
     public User getUser(String email) throws SQLException {
 
